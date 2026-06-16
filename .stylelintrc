@@ -1,0 +1,17 @@
+{
+  "extends": "stylelint-config-recommended",
+  "rules": {
+    "no-unknown-properties": null,
+    "property-no-vendor-prefix": null,
+    "declaration-property-value-no-unknown": null,
+    "property-no-unknown": [
+      true,
+      {
+        "ignoreProperties": [
+          "text-size-adjust",
+          "backdrop-filter"
+        ]
+      }
+    ]
+  }
+}

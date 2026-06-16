@@ -1,0 +1,5 @@
+{
+  "css.lint.vendorPrefix": "warning",
+  "css.lint.compatibleVendorPrefixes": "off",
+  "css.lint.propertyIgnoredDueToDisplay": "off"
+}
