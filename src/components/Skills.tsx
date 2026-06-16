@@ -101,10 +101,7 @@ export default function Skills() {
     <section id="skills" className="py-28 bg-white relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 pointer-events-none">
-        <div
-          className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] floating-orb"
-          style={{ background: 'radial-gradient(ellipse, rgba(163,230,53,0.06) 0%, transparent 70%)' }}
-        />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] floating-orb orb-bg-green-soft" />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8">

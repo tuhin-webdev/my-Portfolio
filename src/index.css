@@ -41,8 +41,8 @@
 
 @layer utilities {
   .glass {
-    backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
   }
 
   .text-gradient {
@@ -88,6 +88,83 @@
 
   .magnetic-btn {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .orb-bg-green {
+    background: radial-gradient(circle, rgba(163,230,53,0.1) 0%, transparent 70%);
+  }
+
+  .orb-bg-yellow {
+    background: radial-gradient(circle, rgba(250,204,21,0.1) 0%, transparent 70%);
+  }
+
+  .orb-bg-yellow-light {
+    background: radial-gradient(circle, rgba(250,204,21,0.08) 0%, transparent 70%);
+  }
+
+  .orb-bg-green-light {
+    background: radial-gradient(circle, rgba(163,230,53,0.07) 0%, transparent 70%);
+  }
+
+  .orb-bg-yellow-soft {
+    background: radial-gradient(circle, rgba(250,204,21,0.06) 0%, transparent 70%);
+  }
+
+  .orb-bg-lime-soft {
+    background: radial-gradient(circle, rgba(163,230,53,0.08) 0%, transparent 70%);
+  }
+
+  .orb-bg-green-soft {
+    background: radial-gradient(ellipse, rgba(163,230,53,0.06) 0%, transparent 70%);
+  }
+
+  .hero-orb-1 {
+    background: radial-gradient(circle, rgba(163,230,53,0.18) 0%, rgba(250,204,21,0.08) 60%, transparent 80%);
+  }
+
+  .hero-orb-2 {
+    background: radial-gradient(circle, rgba(163,230,53,0.14) 0%, rgba(134,239,172,0.06) 60%, transparent 80%);
+  }
+
+  .hero-orb-3 {
+    background: radial-gradient(circle, rgba(250,204,21,0.12) 0%, transparent 70%);
+  }
+
+  .hero-grid-pattern {
+    background-image: linear-gradient(rgba(0,0,0,0.8) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.8) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  .hero-outer-glow {
+    background: conic-gradient(from 0deg, #a3e635, #facc15, #86efac, #a3e635);
+    filter: blur(20px);
+  }
+
+  .process-orb-1 {
+    background: radial-gradient(circle, rgba(163,230,53,0.1) 0%, transparent 70%);
+  }
+
+  .process-orb-2 {
+    background: radial-gradient(circle, rgba(250,204,21,0.07) 0%, transparent 70%);
+  }
+
+  .process-grid-pattern {
+    background-image: linear-gradient(rgba(255,255,255,0.8) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.8) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  .process-number-gradient {
+    background-image: linear-gradient(135deg, rgba(163,230,53,0.2), rgba(250,204,21,0.1));
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  .object-position-center-top {
+    object-position: center top;
+  }
+
+  .radial-overlay-topright {
+    background: radial-gradient(circle at top right, rgba(163,230,53,0.4), transparent 60%);
   }
 }
 

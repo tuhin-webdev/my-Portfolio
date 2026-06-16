@@ -61,14 +61,8 @@ export default function Testimonials() {
   return (
     <section className="py-28 bg-white relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
-        <div
-          className="absolute top-1/3 right-0 w-[400px] h-[400px] floating-orb"
-          style={{ background: 'radial-gradient(circle, rgba(250,204,21,0.08) 0%, transparent 70%)' }}
-        />
-        <div
-          className="absolute bottom-0 left-1/4 w-[300px] h-[300px] floating-orb"
-          style={{ background: 'radial-gradient(circle, rgba(163,230,53,0.07) 0%, transparent 70%)' }}
-        />
+        <div className="absolute top-1/3 right-0 w-[400px] h-[400px] floating-orb orb-bg-yellow-light" />
+        <div className="absolute bottom-0 left-1/4 w-[300px] h-[300px] floating-orb orb-bg-green-light" />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8">

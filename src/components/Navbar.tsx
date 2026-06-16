@@ -65,7 +65,7 @@ export default function Navbar() {
               <Code2 className="w-4.5 h-4.5 text-white" strokeWidth={2.5} />
             </div>
             <span className="font-bold text-base text-gray-900 tracking-tight">
-              MD<span className="text-lime-500">HASAN</span>
+              MD<span className="text-lime-500"> SAHABUDDIN</span>
             </span>
           </motion.button>
 

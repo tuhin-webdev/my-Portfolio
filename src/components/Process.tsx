@@ -41,22 +41,10 @@ export default function Process() {
     <section className="py-28 bg-gray-900 relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 pointer-events-none">
-        <div
-          className="absolute top-0 right-0 w-[500px] h-[500px] floating-orb"
-          style={{ background: 'radial-gradient(circle, rgba(163,230,53,0.1) 0%, transparent 70%)' }}
-        />
-        <div
-          className="absolute bottom-0 left-0 w-[400px] h-[400px] floating-orb"
-          style={{ background: 'radial-gradient(circle, rgba(250,204,21,0.07) 0%, transparent 70%)' }}
-        />
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] floating-orb process-orb-1" />
+        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] floating-orb process-orb-2" />
         {/* Grid */}
-        <div
-          className="absolute inset-0 opacity-[0.03]"
-          style={{
-            backgroundImage: `linear-gradient(rgba(255,255,255,0.8) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.8) 1px, transparent 1px)`,
-            backgroundSize: '60px 60px',
-          }}
-        />
+        <div className="absolute inset-0 opacity-[0.03] process-grid-pattern" />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
@@ -103,13 +91,7 @@ export default function Process() {
               >
                 {/* Number */}
                 <div className="flex items-start justify-between mb-6">
-                  <span
-                    className="text-5xl font-black text-transparent bg-clip-text"
-                    style={{
-                      backgroundImage: `linear-gradient(135deg, rgba(163,230,53,0.2), rgba(250,204,21,0.1))`,
-                      WebkitBackgroundClip: 'text',
-                    }}
-                  >
+                    <span className="text-5xl font-black text-transparent bg-clip-text process-number-gradient">
                     {step.number}
                   </span>
                   <div className={`w-12 h-12 rounded-2xl bg-gradient-to-br ${step.color} flex items-center justify-center shadow-lg flex-shrink-0`}>

@@ -1,6 +1,5 @@
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
-import { useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
+import { useRef, ReactNode } from 'react';
 import { User, Target, Code2, Coffee, Award, BookOpen, Heart, Zap } from 'lucide-react';
 
 const highlights = [
@@ -19,7 +18,7 @@ const personalInfo = [
   { label: 'Status', value: 'Available for Hire ✅' },
 ];
 
-const FadeIn = ({ children, delay = 0, direction = 'up' }: { children: React.ReactNode; delay?: number; direction?: 'up' | 'left' | 'right' }) => {
+const FadeIn = ({ children, delay = 0, direction = 'up' }: { children: ReactNode; delay?: number; direction?: 'up' | 'left' | 'right' }) => {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: '-80px' });
 
@@ -50,14 +49,8 @@ export default function About() {
     <section id="about" className="py-28 bg-gradient-to-b from-white to-gray-50/50 relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 pointer-events-none">
-        <div
-          className="absolute top-20 right-10 w-72 h-72 floating-orb opacity-50"
-          style={{ background: 'radial-gradient(circle, rgba(163,230,53,0.1) 0%, transparent 70%)' }}
-        />
-        <div
-          className="absolute bottom-20 left-10 w-60 h-60 floating-orb opacity-40"
-          style={{ background: 'radial-gradient(circle, rgba(250,204,21,0.1) 0%, transparent 70%)' }}
-        />
+        <div className="absolute top-20 right-10 w-72 h-72 floating-orb opacity-50 orb-bg-green" />
+        <div className="absolute bottom-20 left-10 w-60 h-60 floating-orb opacity-40 orb-bg-yellow" />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
@@ -90,7 +83,7 @@ export default function About() {
                   <h3 className="text-xl font-bold text-gray-900">My Story</h3>
                 </div>
                 <p className="text-gray-600 leading-relaxed">
-                  Hello! I'm <strong className="text-gray-900">MD HASAN</strong>, a passionate Full Stack Developer from Bangladesh. My journey into programming began with curiosity about how websites work, which quickly transformed into a deep passion for building digital solutions.
+                  Hello! I'm <strong className="text-gray-900">MD SAHABUDDIN</strong>, a passionate Full Stack Developer from Bangladesh. My journey into programming began with curiosity about how websites work, which quickly transformed into a deep passion for building digital solutions.
                 </p>
               </div>
             </FadeIn>
@@ -165,9 +158,7 @@ export default function About() {
             {/* Professional Summary */}
             <FadeIn direction="right" delay={0.25}>
               <div className="bg-gray-900 rounded-3xl p-8 text-white relative overflow-hidden">
-                <div className="absolute inset-0 opacity-20"
-                  style={{ background: 'radial-gradient(circle at top right, rgba(163,230,53,0.4), transparent 60%)' }}
-                />
+                <div className="absolute inset-0 opacity-20 radial-overlay-topright" />
                 <div className="relative">
                   <p className="text-3xl font-black mb-1">
                     <span className="text-gradient">1+</span>

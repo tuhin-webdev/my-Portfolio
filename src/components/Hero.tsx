@@ -59,29 +59,20 @@ export default function Hero() {
         <motion.div
           animate={{ x: [0, 30, 0], y: [0, -20, 0], scale: [1, 1.1, 1] }}
           transition={{ duration: 12, repeat: Infinity, ease: 'easeInOut' }}
-          className="absolute top-[-10%] right-[-5%] w-[600px] h-[600px] floating-orb"
-          style={{ background: 'radial-gradient(circle, rgba(163,230,53,0.18) 0%, rgba(250,204,21,0.08) 60%, transparent 80%)' }}
+          className="absolute top-[-10%] right-[-5%] w-[600px] h-[600px] floating-orb hero-orb-1"
         />
         <motion.div
           animate={{ x: [0, -20, 0], y: [0, 30, 0], scale: [1, 1.15, 1] }}
           transition={{ duration: 15, repeat: Infinity, ease: 'easeInOut', delay: 2 }}
-          className="absolute bottom-[-10%] left-[-5%] w-[500px] h-[500px] floating-orb"
-          style={{ background: 'radial-gradient(circle, rgba(163,230,53,0.14) 0%, rgba(134,239,172,0.06) 60%, transparent 80%)' }}
+          className="absolute bottom-[-10%] left-[-5%] w-[500px] h-[500px] floating-orb hero-orb-2"
         />
         <motion.div
           animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.6, 0.3] }}
           transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
-          className="absolute top-[30%] left-[40%] w-[300px] h-[300px] floating-orb"
-          style={{ background: 'radial-gradient(circle, rgba(250,204,21,0.12) 0%, transparent 70%)' }}
+          className="absolute top-[30%] left-[40%] w-[300px] h-[300px] floating-orb hero-orb-3"
         />
         {/* Grid pattern */}
-        <div
-          className="absolute inset-0 opacity-[0.025]"
-          style={{
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.8) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.8) 1px, transparent 1px)`,
-            backgroundSize: '60px 60px',
-          }}
-        />
+        <div className="absolute inset-0 opacity-[0.025] hero-grid-pattern" />
       </div>
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-8 pt-28 pb-20">
@@ -211,11 +202,7 @@ export default function Hero() {
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 30, repeat: Infinity, ease: 'linear' }}
-                className="absolute inset-[-20px] rounded-full opacity-40"
-                style={{
-                  background: 'conic-gradient(from 0deg, #a3e635, #facc15, #86efac, #a3e635)',
-                  filter: 'blur(20px)',
-                }}
+                className="absolute inset-[-20px] rounded-full opacity-40 hero-outer-glow"
               />
 
               {/* Dashed ring */}
@@ -239,8 +226,7 @@ export default function Hero() {
                   <img
                     src="/images/hasan-photo.png"
                     alt="MD HASAN - Full Stack Developer"
-                    className="w-full h-full object-cover"
-                    style={{ objectPosition: 'center top' }}
+                    className="w-full h-full object-cover object-position-center-top"
                   />
                 </div>
 
