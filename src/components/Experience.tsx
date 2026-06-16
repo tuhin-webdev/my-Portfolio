@@ -49,10 +49,14 @@ const experiences = [
 export default function Experience() {
   return (
     <section id="experience" className="py-28 bg-white relative overflow-hidden">
+      <style>{`
+        .experience-orb {
+          background: radial-gradient(circle, rgba(163,230,53,0.05) 0%, transparent 70%);
+        }
+      `}</style>
       <div className="absolute inset-0 pointer-events-none">
         <div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] floating-orb"
-          style={{ background: 'radial-gradient(circle, rgba(163,230,53,0.05) 0%, transparent 70%)' }}
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] floating-orb experience-orb"
         />
       </div>
 
