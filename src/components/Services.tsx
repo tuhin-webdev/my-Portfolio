@@ -69,8 +69,7 @@ export default function Services() {
     <section id="services" className="py-28 bg-gray-50/50 relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div
-          className="absolute top-0 left-1/4 w-[500px] h-[500px] floating-orb"
-          style={{ background: 'radial-gradient(circle, rgba(163,230,53,0.07) 0%, transparent 70%)' }}
+          className="absolute top-0 left-1/4 w-[500px] h-[500px] floating-orb orb-bg-green-light"
         />
       </div>
 

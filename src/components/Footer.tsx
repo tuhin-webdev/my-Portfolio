@@ -55,8 +55,7 @@ export default function Footer() {
       {/* Top gradient */}
       <div className="absolute inset-0 pointer-events-none">
         <div
-          className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[200px] floating-orb"
-          style={{ background: 'radial-gradient(ellipse, rgba(163,230,53,0.08) 0%, transparent 70%)' }}
+          className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[200px] floating-orb orb-bg-green-light"
         />
       </div>
 

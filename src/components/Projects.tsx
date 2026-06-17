@@ -81,8 +81,7 @@ export default function Projects() {
     <section id="projects" className="py-28 bg-gray-50/50 relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div
-          className="absolute bottom-0 right-0 w-[600px] h-[600px] floating-orb"
-          style={{ background: 'radial-gradient(circle, rgba(163,230,53,0.07) 0%, transparent 70%)' }}
+          className="absolute bottom-0 right-0 w-[600px] h-[600px] floating-orb orb-bg-green-light"
         />
       </div>
 
@@ -141,7 +140,7 @@ export default function Projects() {
                 {/* Hover Actions */}
                 <div className="absolute inset-0 flex items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition-all duration-300">
                   <motion.a
-                    href={project.github}
+                    href="https://github.com/tuhin-webdev"
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.1 }}
@@ -151,7 +150,7 @@ export default function Projects() {
                     <GitHubIcon />
                   </motion.a>
                   <motion.a
-                    href={project.demo}
+                    href="https://github.com/tuhin-webdev"
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.1 }}
@@ -187,7 +186,7 @@ export default function Projects() {
                 {/* Buttons */}
                 <div className="flex gap-3">
                   <a
-                    href={project.github}
+                    href="https://github.com/tuhin-webdev"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex-1 py-2.5 rounded-xl text-xs font-semibold text-gray-700 bg-gray-50 border border-gray-100 hover:bg-gray-100 transition-all flex items-center justify-center gap-1.5"
@@ -219,7 +218,7 @@ export default function Projects() {
           className="text-center mt-14"
         >
           <motion.a
-            href="https://github.com"
+            href="https://github.com/tuhin-webdev"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05, y: -2 }}

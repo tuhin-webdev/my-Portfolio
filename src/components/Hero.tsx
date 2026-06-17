@@ -31,7 +31,7 @@ const socials = [
   },
   {
     label: 'Email',
-    href: 'mailto:mdhasan@gmail.com',
+    href: 'mailto:dmsahabuddin48@gmail.com',
     icon: <Mail className="w-4 h-4" />,
   },
 ];
@@ -100,7 +100,7 @@ export default function Hero() {
             >
               <h1 className="font-bold text-gray-900 leading-[1.05] tracking-tight">
                 <span className="block text-5xl lg:text-6xl xl:text-7xl mb-2">Hi, I'm</span>
-                <span className="block text-5xl lg:text-6xl xl:text-7xl text-gradient font-black">MD HASAN</span>
+                <span className="block text-5xl lg:text-6xl xl:text-7xl text-gradient font-black">SAHAB UDDIN</span>
               </h1>
             </motion.div>
 
@@ -153,16 +153,21 @@ export default function Hero() {
               >
                 <Mail className="w-4 h-4" />
                 Contact Me
+              
               </motion.button>
-              <motion.button
-                whileHover={{ scale: 1.05, y: -2 }}
-                whileTap={{ scale: 0.97 }}
-                className="px-8 py-4 rounded-2xl font-semibold text-gray-600 bg-gray-50 border border-gray-200 hover:bg-gray-100 transition-all duration-300 flex items-center gap-2"
-              >
+              <motion.a
+              href="/images/Md_Sahab_Uddin_CV.pdf"
+              download="Md_Sahab_Uddin_CV.pdf"
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.97 }}
+              className="px-8 py-4 rounded-2xl font-semibold text-gray-600 bg-gray-50 border 
+              border-gray-200 hover:bg-gray-100 transition-all 
+              duration-300 flex items-center gap-2">
                 <Download className="w-4 h-4" />
                 Resume
-              </motion.button>
+                </motion.a>
             </motion.div>
+
 
             {/* Social Links */}
             <motion.div

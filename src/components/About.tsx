@@ -10,10 +10,10 @@ const highlights = [
 ];
 
 const personalInfo = [
-  { label: 'Name', value: 'MD HASAN' },
+  { label: 'Name', value: 'MD SAHABUDDIN' },
   { label: 'Role', value: 'Full Stack Developer' },
-  { label: 'Location', value: 'Bangladesh 🇧🇩' },
-  { label: 'Email', value: 'mdhasan@gmail.com' },
+  { label: 'Location', value: 'Mirpur 10, dhaka, Bangladesh' },
+  { label: 'Email', value: 'dmsahabuddin48@gmail.com' },
   { label: 'Languages', value: 'Bangla, English' },
   { label: 'Status', value: 'Available for Hire ✅' },
 ];
